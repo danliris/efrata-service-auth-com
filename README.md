@@ -1,10 +1,10 @@
-# com-danliris-service-auth
-[![codecov](https://codecov.io/gh/danliris/com-danliris-service-auth/branch/dev/graph/badge.svg)](https://codecov.io/gh/danliris/com-danliris-service-auth) [![Build Status](https://travis-ci.com/danliris/com-danliris-service-auth.svg?branch=dev)](https://travis-ci.com/danliris/com-danliris-service-auth) [![Maintainability](https://api.codeclimate.com/v1/badges/68d807fa18624848581d/maintainability)](https://codeclimate.com/github/danliris/com-danliris-service-auth/maintainability)
+# com-efrata-service-auth
+[![codecov](https://codecov.io/gh/efrata/com-efrata-service-auth/branch/dev/graph/badge.svg)](https://codecov.io/gh/efrata/com-efrata-service-auth) [![Build Status](https://travis-ci.com/efrata/com-efrata-service-auth.svg?branch=dev)](https://travis-ci.com/efrata/com-efrata-service-auth) [![Maintainability](https://api.codeclimate.com/v1/badges/68d807fa18624848581d/maintainability)](https://codeclimate.com/github/efrata/com-efrata-service-auth/maintainability)
 
 
 
-DanLiris Application is a enterprise project that aims to manage the business processes of a textile factory, PT. DanLiris.
-This application is a microservices application consisting of services based on .NET Core and Aurelia Js which part of  NodeJS Frontend Framework. This application show how to implement microservice architecture principles. com-danliris-service-finance-accounting repository is part of service that will serve system authentication.
+efrata Application is a enterprise project that aims to manage the business processes of a textile factory, PT. DanLiris.
+This application is a microservices application consisting of services based on .NET Core and Aurelia Js which part of  NodeJS Frontend Framework. This application show how to implement microservice architecture principles. com-efrata-service-finance-accounting repository is part of service that will serve system authentication.
 
 ## Prerequisites
 * Windows, Mac or Linux
@@ -16,7 +16,7 @@ This application is a microservices application consisting of services based on 
 
 ## Getting Started
 
-- Fork the repository and then clone the repository using command  `git clone https://github/YOUR-USERNAME/com-danliris-service-auth.git`  checkout the `dev` branch.
+- Fork the repository and then clone the repository using command  `git clone https://github/YOUR-USERNAME/com-efrata-service-auth.git`  checkout the `dev` branch.
 
 
 ### Command Line
@@ -43,7 +43,7 @@ This application is a microservices application consisting of services based on 
   },
 
   "ConnectionStrings": {
-    "DefaultConnection": "Server=YourDbServer;Database=com-danliris-service-finance-accounting;Trusted_Connection=True;MultipleActiveResultSets=true",
+    "DefaultConnection": "Server=YourDbServer;Database=com-efrata-service-finance-accounting;Trusted_Connection=True;MultipleActiveResultSets=true",
   },
   "ClientId": "your ClientId",
   "Secret": "Your Secret",
@@ -65,8 +65,8 @@ and  Your appsettings.Developtment.json look like this :
 ```
 - Make sure port application has no conflict, setting port application in launchSettings.json
 ```
-com-danliris-service-auth
- ┣ Com.Danliris.Service.Auth.WebApi
+com-efrata-service-auth
+ ┣ Com.Efrata.Service.Auth.WebApi
     ┗ Properties
        ┗ launchSettings.json
 ```
@@ -90,7 +90,7 @@ file launchSettings.json look like this :
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Com.Danliris.Service.Auth.WebApi": {
+    "Com.Efrata.Service.Auth.WebApi": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {
@@ -107,17 +107,17 @@ file launchSettings.json look like this :
 ### Visual Studio
 
 - Download Visual Studio 2019 (any edition) from https://www.visualstudio.com/downloads/ .
-- Open `Com.Danliris.Service.Auth.sln` and wait for Visual Studio to restore all Nuget packages.
+- Open `Com.Efrata.Service.Auth.sln` and wait for Visual Studio to restore all Nuget packages.
 - Create empty database.
 - Setting connection to database using ConnectionStrings in appsettings.json and appsettings.Developtment.json.
 - Make sure port application has no conflict, setting port application in launchSettings.json.
 ```
-com-danliris-service-auth
- ┣ Com.Danliris.Service.Auth.WebApi
+com-efrata-service-auth
+ ┣ Com.Efrata.Service.Auth.WebApi
     ┗ Properties
        ┗ launchSettings.json
 ```
-- Ensure `Com.Danliris.Service.Auth.WebApi` is the startup project and run it and the browser will launched in new tab http://localhost:22160/swagger/index.html
+- Ensure `Com.Efrata.Service.Auth.WebApi` is the startup project and run it and the browser will launched in new tab http://localhost:22160/swagger/index.html
 
 
 ### Run Unit Tests in Visual Studio 
@@ -132,19 +132,19 @@ com-danliris-service-auth
 ### Root directory and description
 
 ```
-com-danliris-service-auth
- ┣ Com.Danliris.Service.Auth.Lib
- ┣ Com.Danliris.Service.Auth.Test
- ┣ Com.Danliris.Service.Auth.WebApi
+com-efrata-service-auth
+ ┣ Com.Efrata.Service.Auth.Lib
+ ┣ Com.Efrata.Service.Auth.Test
+ ┣ Com.Efrata.Service.Auth.WebApi
  ┣ TestResults
  ┣ .codecov.yml
  ┣ .gitignore
  ┣ .travis.yml
- ┣ Com.Danliris.Service.Auth.sln
+ ┣ Com.Efrata.Service.Auth.sln
  ┗ README.md
  ```
 
-**1. Com.Danliris.Service.Auth.Lib**
+**1. Com.Efrata.Service.Auth.Lib**
 
 This folder consists of various libraries, domain Models, View Models, and Business Logic.The Model and View Models represents the data structure. Business Logic has responsibility  to organize, prepare, manipulate, and organize data. The tasks are include entering data into databases, updating data, deleting data, and so on. The model carries out its work based on instructions from the controller.
 
