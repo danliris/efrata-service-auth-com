@@ -6,7 +6,7 @@ name: Build and deploy ASP.Net Core app to Azure Web App - com-efrata-service-au
 on:
   push:
     branches:
-      - master
+      - dev
 
 jobs:
   build-and-deploy:
@@ -29,7 +29,7 @@ jobs:
     - name: Deploy to Azure Web App
       uses: azure/webapps-deploy@v2
       with:
-        app-name: 'com-efrata-service-auth'
+        app-name: 'efrata-service-auth-com'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_17f0625f06d746a68d7bcf76c7081bc6 }}
         package: ${{env.DOTNET_ROOT}}/myapp 
